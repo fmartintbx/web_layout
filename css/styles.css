@@ -44,7 +44,16 @@ body {
 .navegacion-principal{ 
    
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+   
+}
+
+@media(min-width: 768px){ 
+    .navegacion-principal{ 
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
 }
 .navegacion-principal a{ 
    color: var(--blanco);
@@ -58,5 +67,11 @@ body {
 .navegacion-principal a:hover{ 
     background-color: var(--primario);
     color: var(--oscuro);
+}
+
+.hero{ 
+    background-image: url(../img/hero.jpg);
+ 
+    background-size: cover;
 }
 
